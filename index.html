@@ -776,7 +776,7 @@ header.top .bar{overflow:visible;height:auto} /* annule .bar (progression) : sin
           <div class="swatches" id="spSw" role="group" aria-label="Coloris"></div>
           <div><div class="stockline"><span class="dot-live"></span><span id="spStock"></span></div><div class="bar" style="margin-top:8px"><i id="spBar"></i></div></div>
           <div class="kv"><div>Dimensions<b>30 × 30 × 19 cm</b></div><div>Anses<b>Coton tressé, 40 cm</b></div><div>Zone<b>22 × 22 cm</b></div><div>Colisage<b>25, carton de 50</b></div></div>
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:6px"><span class="price-big">dès 1,21 €<small> HT, vos prix pro</small></span><button class="btn red" data-go="prod">Personnaliser</button></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:6px"><span class="price-big">dès 1,46 €<small> HT, vos prix pro</small></span><button class="btn red" data-go="prod">Personnaliser</button></div>
         </div>
       </div>
     </div>
@@ -929,7 +929,7 @@ header.top .bar{overflow:visible;height:auto} /* annule .bar (progression) : sin
         <section class="acard">
           <h3>Utilisateurs de l'entreprise <span class="both">Options 1 et 2</span></h3>
           <div id="uList"></div>
-          <div class="pend" style="margin-top:14px"><span><b>1 commande à valider</b> · Hugo, 1 742,00 € HT</span><span style="display:flex;gap:6px"><button class="chipb g" data-t="Commande validée : elle part en production">Valider</button><button class="chipb" data-t="Commande renvoyée à Hugo avec votre commentaire">Refuser</button></span></div>
+          <div class="pend" style="margin-top:14px"><span><b>1 commande à valider</b> · Hugo, 2 107,82 € HT</span><span style="display:flex;gap:6px"><button class="chipb g" data-t="Commande validée : elle part en production">Valider</button><button class="chipb" data-t="Commande renvoyée à Hugo avec votre commentaire">Refuser</button></span></div>
         </section>
         <section class="acard">
           <h3>Factures et bons de livraison <span class="both">Options 1 et 2</span></h3>
@@ -1022,17 +1022,17 @@ function bizDate(n){const d=new Date();let k=0;while(k<n){d.setDate(d.getDate()+
 /* ---------- data ---------- */
 const COL={"020":["Rouge","#C8202B"],"030":["Fuchsia","#D6237A"],"053":["Turquoise","#2A9BD6"],"057":["Marine","#23366E"],"070":["Vert pomme","#7DBA3A"],"080":["Noir","#1C1C1C"],"090":["Gris","#5E6670"],"045":["Orange","#E8592A"],"055":["Bleu","#2F5DAA"],"075":["Vert sapin","#1F5A3B"],"001":["Naturel","#CDB48C"],"420":["Rouge lurex","#C21F27"],"401":["Naturel lurex","#D8C49B"]};
 const BRAS={"020":[12480,null],"030":[3210,null],"053":[6870,null],"057":[9940,["18/01/2027",10000]],"070":[4120,null],"080":[8330,["12/03/2027",5000]],"090":[2060,null]};
-const TIERS=[[100,1.62],[250,1.48],[500,1.38],[1000,1.29],[2500,1.21]];
-const SERI=[[100,.52],[250,.40],[500,.36],[1000,.28],[2500,.24],[5000,.19],[10000,.16]];
+const TIERS=[[100,1.96],[250,1.79],[500,1.67],[1000,1.56],[2500,1.46]];
+const SERI=[[100,0.63],[250,0.48],[500,0.44],[1000,0.34],[2500,0.29],[5000,0.23],[10000,0.2]];
 const PANT=[["Black C","#2D2926"],["White","#FFFFFF"],["485 C","#DA291C"],["281 C","#00205B"],["7723 C","#50A684"],["109 C","#FFD100"],["Orange 021 C","#FE5000"],["2728 C","#0047BB"],["348 C","#00843D"],["871 C","#84754E"],["Cool Gray 7 C","#97999B"],["7621 C","#AB2328"]];
 const PRODS=[
- {id:"brasilia",n:"Brasilia",d:"Shopping jute, anses et soufflets de couleur",L:17,fmt:"Shopping",zone:"22 × 22 cm",z:22,cols:["020","030","053","057","070","080","090"],img:c=>IMG["brasilia_"+c],alt:IMG.brasilia_life,stock:47010,from:1.21,tag:"Modèle du moment"},
- {id:"copacabana",n:"Copacabana",d:"Shopping jute, anses rondes, le grand format",L:28,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["001"],img:()=>IMG.copacabana,alt:IMG.copa,stock:18420,from:1.74,tag:"Top ventes",t:"red"},
- {id:"paros",n:"Paros",d:"Shopping jute, anses en toile de coton teintée",L:28,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["020","045","080","055","057","075"],img:c=>IMG["paros_"+c],alt:IMG.paros_life,stock:9650,from:1.86},
- {id:"phuket",n:"Phuket",d:"Cabas jute, doubles anses coton plates",L:35,fmt:"Cabas XL",zone:"28 × 28 cm",z:28,cols:["001"],img:()=>IMG.phuket,alt:IMG.phuket_life,stock:6240,from:2.18,tag:"Double portée"},
- {id:"cortina",n:"Cortina",d:"Shopping jute scintillant, fil lurex or",L:24,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["420","401"],img:()=>IMG.cortina,alt:IMG.cortina_life,stock:3480,from:2.05,tag:"Lurex",t:"gold",lurex:1},
- {id:"vail",n:"Vail",d:"Mini sac jute scintillant, fil lurex or",L:8,fmt:"Mini",zone:"15 × 15 cm",z:15,cols:["420","401"],img:()=>IMG.vail,alt:IMG.cortina_life,stock:5120,from:1.32,lurex:1},
- {id:"vienna",n:"Vienna",d:"Sac bouteille jute scintillant",L:1,fmt:"Bouteille",zone:"6 × 15 cm",z:6,cols:["420","401"],img:()=>IMG.vienna,alt:IMG.cortina_life,stock:2890,from:1.18,lurex:1}
+ {id:"brasilia",n:"Brasilia",d:"Shopping jute, anses et soufflets de couleur",L:17,fmt:"Shopping",zone:"22 × 22 cm",z:22,cols:["020","030","053","057","070","080","090"],img:c=>IMG["brasilia_"+c],alt:IMG.brasilia_life,stock:47010,from:1.46,tag:"Modèle du moment"},
+ {id:"copacabana",n:"Copacabana",d:"Shopping jute, anses rondes, le grand format",L:28,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["001"],img:()=>IMG.copacabana,alt:IMG.copa,stock:18420,from:2.1,tag:"Top ventes",t:"red"},
+ {id:"paros",n:"Paros",d:"Shopping jute, anses en toile de coton teintée",L:28,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["020","045","080","055","057","075"],img:c=>IMG["paros_"+c],alt:IMG.paros_life,stock:9650,from:2.26},
+ {id:"phuket",n:"Phuket",d:"Cabas jute, doubles anses coton plates",L:35,fmt:"Cabas XL",zone:"28 × 28 cm",z:28,cols:["001"],img:()=>IMG.phuket,alt:IMG.phuket_life,stock:6240,from:2.64,tag:"Double portée"},
+ {id:"cortina",n:"Cortina",d:"Shopping jute scintillant, fil lurex or",L:24,fmt:"Shopping",zone:"28 × 24 cm",z:28,cols:["420","401"],img:()=>IMG.cortina,alt:IMG.cortina_life,stock:3480,from:2.48,tag:"Lurex",t:"gold",lurex:1},
+ {id:"vail",n:"Vail",d:"Mini sac jute scintillant, fil lurex or",L:8,fmt:"Mini",zone:"15 × 15 cm",z:15,cols:["420","401"],img:()=>IMG.vail,alt:IMG.cortina_life,stock:5120,from:1.6,lurex:1},
+ {id:"vienna",n:"Vienna",d:"Sac bouteille jute scintillant",L:1,fmt:"Bouteille",zone:"6 × 15 cm",z:6,cols:["420","401"],img:()=>IMG.vienna,alt:IMG.cortina_life,stock:2890,from:1.43,lurex:1}
 ];
 
 /* ---------- routing ---------- */
@@ -1087,7 +1087,7 @@ $("#newb").innerHTML=[["UC","UCAP","Casquettes brodées"],["UP","UPACK","Packagi
 /* ---------- product cards ---------- */
 function card(p,ci){const c=p.cols[ci||0];return`<button class="pc" data-go="prod" data-id="${p.id}"><span class="ph">${p.tag?`<span class="pill ${p.t||"dark"}">${p.tag}</span>`:""}<img src="${p.img(c)}" alt="${p.n}" data-main><img class="alt" src="${p.alt}" alt=""><span class="go">Personnaliser</span></span><span class="bd"><span class="br">UBAG, ${p.L} L</span><span class="nm">${p.n}</span><span class="ds">${p.d}</span><span class="swatches">${p.cols.map((x,i)=>`<span class="sw" data-ci="${i}" style="background:${COL[x][1]}" title="${COL[x][0]}" aria-pressed="${i===(ci||0)}"></span>`).join("")}</span><span class="ft"><span class="pr">dès ${eur(p.from)}<small>HT, prix pro</small></span><span class="st">${nf(p.stock)} en stock<span class="bar"><i data-w="${Math.min(100,p.stock/500)}%"></i></span></span></span></span></button>`}
 function wireCards(root){root.querySelectorAll(".pc").forEach(el=>{const p=PRODS.find(x=>x.id===el.dataset.id);el.querySelectorAll(".sw").forEach(s=>s.addEventListener("mouseenter",()=>{el.querySelector("[data-main]").src=p.img(p.cols[s.dataset.ci]);el.querySelectorAll(".sw").forEach(z=>z.setAttribute("aria-pressed",z===s))}))});root.querySelectorAll(".bar i[data-w]").forEach(b=>setTimeout(()=>b.style.width=b.dataset.w,300))}
-const RAIL=[...PRODS.slice(0,4),{id:"stanley",n:"Stanley",d:"Sac à dos KWOO 26 L, zip rétro-réfléchissant",L:26,cols:["080"],img:()=>IMG.stanley,alt:IMG.cover,stock:1240,from:14.90,tag:"KWOO",t:"dark"},{id:"globe",n:"Globe",d:"Sac à dos cabine KWOO 18 L, norme A4E",L:18,cols:["080"],img:()=>IMG.globe,alt:IMG.kwoo,stock:980,from:17.40,tag:"KWOO",t:"dark"},{id:"city",n:"City",d:"Grand sac à main KWOO 30 L",L:30,cols:["080"],img:()=>IMG.city,alt:IMG.kwoo,stock:860,from:15.20,tag:"KWOO",t:"dark"}];
+const RAIL=[...PRODS.slice(0,4),{id:"stanley",n:"Stanley",d:"Sac à dos KWOO 26 L, zip rétro-réfléchissant",L:26,cols:["080"],img:()=>IMG.stanley,alt:IMG.cover,stock:1240,from:18,tag:"KWOO",t:"dark"},{id:"globe",n:"Globe",d:"Sac à dos cabine KWOO 18 L, norme A4E",L:18,cols:["080"],img:()=>IMG.globe,alt:IMG.kwoo,stock:980,from:21,tag:"KWOO",t:"dark"},{id:"city",n:"City",d:"Grand sac à main KWOO 30 L",L:30,cols:["080"],img:()=>IMG.city,alt:IMG.kwoo,stock:860,from:18.4,tag:"KWOO",t:"dark"}];
 PRODS.push(...RAIL.slice(4));
 $("#rail").innerHTML=RAIL.map(p=>card(p)).join("");wireCards($("#rail"));
 $$("[data-rail]").forEach(b=>b.onclick=()=>$("#rail").scrollBy({left:+b.dataset.rail*300,behavior:"smooth"}));
@@ -1145,7 +1145,7 @@ function compute(){const Q=totalQ(),u=tier(TIERS,Math.max(Q,100)),L=[],W=[];
   S.cols.forEach(c=>{const q=qOf(c);if(q)L.push([`${COL[c][0]} – BRASILIA001/${c}<br><small style="color:#AEB5C8">${nf(q)} × ${eur(u)}</small>`,q*u])});
   const faces=S.pos.map((v,i)=>v?i:-1).filter(i=>i>=0);
   if(S.method==="seri"&&Q){faces.forEach(i=>{const p=tier(SERI,Q)*S.nc[i];L.push([`Sérigraphie ${["face A","face B"][i]}, ${S.nc[i]} coul.<br><small style="color:#AEB5C8">${nf(Q)} × ${eur(p)}</small>`,Q*p])});const ft=faces.length===2&&S.nc[0]===S.nc[1]?[faces[0]]:faces;ft.forEach(i=>L.push([`Frais techniques sérigraphie${faces.length===2&&ft.length===1?" (logo identique)":""}<br><small style="color:#AEB5C8">${S.nc[i]} × 20,00 €</small>`,S.nc[i]*20]))}
-  if(S.method==="num"&&Q){const p=tier([[100,1.45],[250,1.2],[500,1.05],[1000,.95]],Q);faces.forEach(i=>L.push([`Numérique ${["face A","face B"][i]}<br><small style="color:#AEB5C8">${nf(Q)} × ${eur(p)}</small>`,Q*p]));L.push(["Frais technique numérique",25])}
+  if(S.method==="num"&&Q){const p=tier([[100,1.76],[250,1.45],[500,1.28],[1000,1.16]],Q);faces.forEach(i=>L.push([`Numérique ${["face A","face B"][i]}<br><small style="color:#AEB5C8">${nf(Q)} × ${eur(p)}</small>`,Q*p]));L.push(["Frais technique numérique",25])}
   const sub=L.reduce((a,l)=>a+l[1],0),port=0;
   if(Q&&Q<100)W.push("Commande minimum : 100 pièces au total.");
   if(S.method!=="none"&&!faces.length)W.push("Choisissez au moins une position de marquage.");
@@ -1158,7 +1158,7 @@ function renderAll(){
   $("#qblocks").innerHTML=[...S.cols].map(c=>{const[s,a]=BRAS[c];const rows=[["a","<span class='av in'>Disponible</span>",s]];if(a)rows.push(["b",a[0],a[1]]);return`<div class="qblock"><div class="qh"><img src="${IMG["brasilia_"+c]}" alt="">${COL[c][0]}</div><table class="qt"><thead><tr><th>Numéro d'article</th><th>Disponibilité</th><th>Quantité</th><th>Votre quantité</th></tr></thead><tbody>${rows.map((r,i)=>`<tr><td>${i?"":"BRASILIA001/"+c}</td><td>${r[1]}</td><td>${nf(r[2])}</td><td><input type="number" min="0" step="25" inputmode="numeric" data-c="${c}" data-r="${r[0]}" value="${(S.q[c]||{})[r[0]]||""}" placeholder="Quantité" aria-label="${COL[c][0]} ${i?"arrivage":"stock"}"></td></tr>`).join("")}</tbody></table></div>`}).join("");
   $$("#qblocks input").forEach(i=>i.oninput=()=>{const c=i.dataset.c;S.q[c]=S.q[c]||{};S.q[c][i.dataset.r]=Math.max(0,parseInt(i.value)||0);sumUp()});
   // step 3
-  const M=[["seri","Sérigraphie",["À partir de 0,16 €","20,00 € / couleur","Max. 4 couleurs"],["5 jours","Recommandé"]],["num","Numérique",["À partir de 0,95 €","25,00 € par commande","Quadrichromie"],["5 jours"]],["brod","Broderie",["Réservée au textile, aux casquettes","et aux sacs coton ≥ 180 g/m²"],[]]];
+  const M=[["seri","Sérigraphie",["À partir de 0,20 €","20,00 € / couleur","Max. 4 couleurs"],["5 jours","Recommandé"]],["num","Numérique",["À partir de 1,16 €","25,00 € par commande","Quadrichromie"],["5 jours"]],["brod","Broderie",["Réservée au textile, aux casquettes","et aux sacs coton ≥ 180 g/m²"],[]]];
   $("#meths").innerHTML=M.map(([k,t,l,f])=>`<button class="meth" data-m="${k}" aria-pressed="${S.method===k}" ${k==="brod"?"disabled":""}><span class="mt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 9V3h12v6M6 18H4v-7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7h-2"/><path d="M7 14h10v7H7z"/></svg>${t}</span><span class="ml">${l.map(x=>`<span>${x}</span>`).join("")}</span><span class="mf">${f.map(x=>`<span class="pill ${x==="Recommandé"?"green":""}">${x}</span>`).join("")}${k==="brod"?'<span class="pill">Non disponible sur le jute</span>':""}</span></button>`).join("");
   $$("#meths .meth").forEach(b=>b.onclick=()=>{S.method=b.dataset.m;S.validated=false;renderAll()});
   const Q=Math.max(totalQ(),100);
@@ -1225,7 +1225,7 @@ function setColors(n,silent){const L=S.logo;while(L.cols.length<n)L.cols.push(PA
 $("#addc").onclick=()=>setColors(Math.min(S.method==="seri"?4:6,maxC()+1));
 function renderFees(){const Q=Math.max(totalQ(),100),R=compute();const faces=S.pos.map((v,i)=>v?i:-1).filter(i=>i>=0);let h="";
   if(S.method==="seri"){faces.forEach(i=>{h+=`<div><span>Face ${"AB"[i]} : ${S.nc[i]} coul. × ${eur(tier(SERI,Q))}</span><b>${eur(tier(SERI,Q)*S.nc[i])} / pièce</b></div>`});const ft=faces.length===2&&S.nc[0]===S.nc[1]?1:faces.length;h+=`<div><span>Frais techniques${ft<faces.length?" (logo identique)":""}</span><b>${eur(20*S.nc[faces[0]||0]*ft)}</b></div>`}
-  else if(S.method==="num"){h+=`<div><span>Numérique, ${faces.length} face(s)</span><b>${eur(tier([[100,1.45],[250,1.2],[500,1.05],[1000,.95]],Q)*faces.length)} / pièce</b></div><div><span>Frais technique</span><b>25,00 €</b></div>`}
+  else if(S.method==="num"){h+=`<div><span>Numérique, ${faces.length} face(s)</span><b>${eur(tier([[100,1.76],[250,1.45],[500,1.28],[1000,1.16]],Q)*faces.length)} / pièce</b></div><div><span>Frais technique</span><b>25,00 €</b></div>`}
   h+=`<div class="tt2"><span>Total commande, ${nf(R.Q)} pièces</span><span>${eur(R.tot)} HT hors port</span></div>`;$("#fees").innerHTML=`<b style="font-size:13px">Rappel des frais de marquage</b>`+h}
 $("#wmm").oninput=e=>{S.logo.w=Math.max(.05,Math.min(1,(+e.target.value||10)/220));clamp();edRender()};
 $("#tC").onclick=()=>{S.logo.x=.5;S.logo.y=.5;edRender()};$("#tT").onclick=()=>{S.logo.y=(S.logo.w/S.logo.ratio)/2+.03;clamp();edRender()};$("#tF").onclick=()=>{S.logo.w=1;S.logo.x=.5;S.logo.y=.5;clamp();edRender()};$("#tD").onclick=()=>{S.logo.src=null;S.logo.name="Logo exemple";S.logo._r=2.2;S.logo.ratio=2.2;edRender()};
@@ -1326,7 +1326,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){if($("#ed").classLi
 
 /* ---------- V4 : espace entreprise ---------- */
 (function(){
-  const Q=[["brasilia_057","D-2026-0142","Brasilia marine · 500 pcs · sérigraphie 2 coul. face A","1 391,00 € HT · valable jusqu'au 11/11"],["copacabana","D-2026-0139","Copacabana · 250 pcs · numérique face A","742,50 € HT · valable jusqu'au 06/11"],["paros_020","D-2026-0127","Paros rouge · 1 000 pcs · sérigraphie 1 coul. 2 faces","2 286,00 € HT · expiré, à actualiser"]];
+  const Q=[["brasilia_057","D-2026-0142","Brasilia marine · 500 pcs · sérigraphie 2 coul. face A","1 683,11 € HT · valable jusqu'au 11/11"],["copacabana","D-2026-0139","Copacabana · 250 pcs · numérique face A","898,43 € HT · valable jusqu'au 06/11"],["paros_020","D-2026-0127","Paros rouge · 1 000 pcs · sérigraphie 1 coul. 2 faces","2 766,06 € HT · expiré, à actualiser"]];
   $("#qList").innerHTML=Q.map(([im,n,d,p])=>`<div class="arow"><img src="${IMG[im]||""}" alt=""><div><b>${n}</b><small>${d}</small><small>${p}</small></div><div class="ac"><button class="chipb" data-t="Le devis ${n} s'ouvre dans le configurateur, modifiable">Reprendre</button><button class="chipb" data-t="PDF du devis ${n} téléchargé">PDF</button><button class="chipb k" data-t="Devis ${n} transformé en commande">Commander</button></div></div>`).join("");
   const O=[["brasilia_020","Commande 23 771","Brasilia rouge · 750 pcs · BAT approuvé · en production"],["phuket","Commande 23 702","Phuket · 300 pcs · expédiée le 21/10"],["brasilia_080","Commande 23 588","Brasilia noir · 1 200 pcs · livrée le 02/10"]];
   $("#oList").innerHTML=O.map(([im,n,d])=>`<div class="arow"><img src="${IMG[im]||""}" alt=""><div><b>${n}</b><small>${d}</small></div><div class="ac"><button class="chipb" data-t="Suivi de la ${n.toLowerCase()}">Suivi</button><button class="chipb k" data-t="Même produit, même marquage, même logo : il ne reste qu'à choisir les quantités">Recommander</button></div></div>`).join("");
